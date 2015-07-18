@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script</title>
+</head>
+<body>
+<script type="text/javascript">
+function registro()
+{
+	var correo = document.getElementById('correo').value;
+	if(correo!="usuario@ejemplo.com"){
+alert("El correo ingresado es "+correo);		
+} else {
+	alert("Ingrese un correo y un password para continuar");
+}
+}
+function limpiar(nombre)
+{
+nombre.value='';
+}
+function llenar(nombre)
+{
+	if(nombre.id="correo"){
+	nombre.value=	"usuario@ejemplo.com";
+	} else if (nombre.id="password") {
+		nombre.value="gunter123123";
+	};
+	
+}
+</script>
+<h1>Registrarse</h1>
+<form>
+<a href="https://www.facebook.com/fargorock" target="_blank"><img src="img\logofb.jpg"  WIDTH=70 HEIGHT=70 alt="logoFb"> </a><br>
+O<br>
+Correo Electronico
+<input type="text" id="correo" value="usuario@ejemplo.com" onFocus="limpiar(this)" onBlur="llenar(this)"><br>
+Password
+<input type="password" id="password" value="gunter123123" onFocus="limpiar(this)" onBlur="llenar(this)"><br>
+
+<input type="button" onClick="registro()" value="Registrar">
+</form>
+</body>
+</html>
