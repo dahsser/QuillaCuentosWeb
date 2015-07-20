@@ -9,18 +9,22 @@ body{
 background: url(../img/fondo-modificado.jpg) no-repeat center center fixed; 
 background-size: cover;
 height: 100%;
+padding-top: 100px;
+padding-bottom: 150px;
+background-attachment: fixed;
 }
 #carta-frontal{
 	top: 50%;
-  width: 80%;
-  margin-top: 150px;
+  width: 90%;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
 }
 .texto-titulo{
 	margin-left: 10%;
 }
 .texto-titulo h1{
   color: #fff;
-  margin-left: 15%;
   font-size: 38px;
   line-height: 44px;
   margin-bottom: 30px;
@@ -39,7 +43,7 @@ height: 100%;
   font-size: 30px;
   line-height: 20px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .registrate p{
   text-align: center;	
@@ -53,6 +57,10 @@ height: 100%;
 	border-radius: 15px;
 	padding: 10px;
 }
-.fa{
-	background-image:url(../img/fb-logo.jpg) no-repeat center;
+button i img{
+	width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
